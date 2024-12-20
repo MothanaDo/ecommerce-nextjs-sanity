@@ -9,6 +9,7 @@ import {
 import localFont from "next/font/local";
 import "../globals.css";
 import Header from "@/components/Header";
+import { SanityLive } from "@/sanity/lib/live";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -41,6 +42,7 @@ export default function RootLayout({
             <Header />
             {children}
           </main>
+          <SanityLive />
         </body>
       </html>
     </ClerkProvider>

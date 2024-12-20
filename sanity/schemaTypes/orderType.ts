@@ -131,7 +131,7 @@ export const orderType = defineType({
       const orderIdSnippet = `${select.orderId.slice(0, 5)}...${select.orderId.slice(-5)}`;
       return {
         title: `${select.name}(${orderIdSnippet})`,
-        subtitle: `$${select.amount} ${select.currency}, ${select.email}`,
+        subtitle: `${select.amount} ${select.currency}, ${select.email}`,
         media: BasketIcon,
       };
     },
